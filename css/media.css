@@ -43,8 +43,6 @@
     }
     .banner-img{
         width: auto;
-        display: block;
-        margin: 15px auto;
     }
     /*index page*/
     .news-box-large img{
@@ -66,7 +64,7 @@
         overflow: scroll;
         margin: 0;
         padding-bottom: 10px;
-        justify-content: center;
+        /*justify-content: center;*/
     }
     .editor-news-box{
         margin: 10px;
@@ -123,7 +121,7 @@
 
 }
 @media screen and (max-width: 450px) {
-    .banner-img, .news-main-pic, .news-box-large img{
+    .banner-img, .news-main-pic, .news-box-large img, .news-box-md img{
         width: 100%;
     }
     footer .wrapper{
