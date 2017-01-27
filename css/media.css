@@ -121,7 +121,7 @@
 
 }
 @media screen and (max-width: 450px) {
-    .banner-img, .news-main-pic, .news-box-large img, .news-box-md img{
+    .banner-img, .news-main-pic, .news-box-large img{
         width: 100%;
     }
     footer .wrapper{
