@@ -12,30 +12,44 @@
     <!--FONTS AND ICONS-->
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700,900&amp;subset=cyrillic" rel="stylesheet">
     <!--JS-->
-    <!--<script type="text/javascript" src="js/script.js"></script>-->
+    <!--JS-->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="wrapper header-styles">
-            <div>
-                <h1 class="main-header">
-                    <a href="index.html">
-                        Current news line
-                    </a>
-                </h1>
-            </div>
-            <div>
-                <a href="#">
-                    <i class="fa fa-user-circle fa-lg"></i>
-                    Войти
+<header>
+    <div class="wrapper header-styles">
+        <div>
+            <h1 class="main-header">
+                <a href="index.html">
+                    Current news line
                 </a>
+            </h1>
+        </div>
+
+        <div class="log-in-block">
+            <a href="#" class="log-in-button">
+                <i class="fa fa-user-circle fa-lg"></i>
+                Войти
+            </a>
+            <div class="log-in-pop-up">
+                <form action="index-registered.html" method="post" class="log-in-form">
+                    <input type="text" placeholder="Логин" required>
+                    <input type="email" placeholder="Электронная почта" required>
+                    <div class="text-center">
+                        <button class="btn-styles" id="log-in-entance-button">
+                            Войти
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-    </header>
+    </div>
+</header>
     <main>
         <div class="wrapper">
             <h2 class="registration-place">Регистрация</h2>
-            <form>
+            <form action="index-registered.html" method="post">
                 <div class="registration-field-box">
                     <p>Логин</p>
                     <input type="text" required placeholder="Логин">

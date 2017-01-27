@@ -64,6 +64,26 @@ footer .wrapper{
 .social-icon i:hover{
     color: hsla(300, 66%, 24%, 0.8);
 }
+
+.log-in-pop-up{
+    width: 300px;
+    border: solid 1px purple;
+    position: absolute;
+    display: none;
+    z-index: 100;
+    background-color: white;
+}
+.log-in-form{
+    padding: 10px 10px 3px;
+    border-bottom: solid 1px purple;
+}
+.editor-mode-btn{
+    margin-right: 15px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+
 /*index page*/
 .news-box-large{
     margin: 15px 20px;
@@ -94,7 +114,6 @@ footer .wrapper{
 .tag-box{
     padding: 3px 6px;
     border: solid 1px black;
-    border-radius: 4px;
     color: white;
     display: inline-block;
     margin-top: 4px;
@@ -266,7 +285,9 @@ input[type="text"], textarea, select, input[type="password"], input[type="email"
     text-align: center;
     padding-top: 4%;
 }
-.button-block button, .registration-place button{
+.button-block button, .registration-place button,
+
+.btn-styles{
     padding: 4px;
     border-radius: 5px;
     color: white;
@@ -279,7 +300,10 @@ input[type="text"], textarea, select, input[type="password"], input[type="email"
     cursor: pointer;
     outline: none;
 }
-
+.registr-btn-style{
+    width: 80%;
+    margin: 10px 0;
+}
 
 /*registration page*/
 .registration-field-box{
