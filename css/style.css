@@ -19,22 +19,27 @@ h2, h3, label{
     text-align: center;
 }
 body{
-
+    background: url("../images/bg3.jpg");
 }
 .wrapper {
     width: 900px;
     margin: 0 auto;
     position: relative;
+    border: solid 3px #793779;
+    border-top: none;
+    border-bottom: none;
+    background-color: rgb(255, 255, 255);
 }
 
 /*header footer styles*/
 
 .header-styles{
     display: flex;
-    padding: 40px 0 20px;
+    padding: 40px 10px 20px;
     border-bottom: solid 2px rgba(103, 21, 103, 0.8);
     justify-content: space-between;
     align-items: flex-end;
+    background-color: rgb(194, 194, 194);
 }
 .main-header{
     text-transform: uppercase;
@@ -135,10 +140,6 @@ footer .wrapper{
 .article-read-more{
     text-align: right;
     padding-top: 5px;
-}
-.two-news-in-one-block{
-    display: flex;
-    margin: 15px 20px;
 }
 .news-box-md{
     width: 50%;
@@ -335,9 +336,9 @@ input[type="text"], textarea, select, input[type="password"], input[type="email"
 
 
 /*3 in 1 imgs*/
-.tree-in-one-img-block{
+.tree-in-one-img-block, .two-news-in-one-block{
     display: flex;
-    margin: 15px 20px;
+    padding: 15px 20px;
 }
 
 .prv-img-text-box {
