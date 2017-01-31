@@ -23,7 +23,7 @@
         width: 85%;
     }
     /*whole news*/
-    .form-divider, .news-main-content, .lg-news-aside-info,.editor-main-content, .editor-aside-block {
+    .form-divider, .news-main-content, .lg-news-aside-info,.editor-main-content, .editor-aside-block , .preview-img-lg{
         width: 100%;
     }
     .news-box-aside{
@@ -52,7 +52,7 @@
     .news-box-md img{
         float: none;
         width: 150px;
-        height: 150;
+        height: 150px;
         margin: 0 auto;
         display: block;
     }
@@ -61,15 +61,29 @@
     }
     .editor-news-block{
         display: flex;
-        overflow: scroll;
+        overflow-x: scroll;
         margin: 0;
         padding-bottom: 10px;
-        /*justify-content: center;*/
     }
     .editor-news-box{
         margin: 10px;
     }
-
+    /*3 in one imgs*/
+    .tree-in-one-img-block{
+        flex-direction: column;
+    }
+    .preview-sm-img-block {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .preview-sm-img-block .preview-img-block{
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .preview-img-lg{
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -85,6 +99,7 @@
     /*whole news*/
     .news-box-aside, .two-news-in-one-block{
         flex-direction: column;
+        width:100%;
     }
     .news-main-content{
         padding: 20px 15px;
@@ -92,10 +107,11 @@
     .main-header{
         font-size: 26px;
     }
+
     /*index page*/
     .news-box-large{
         flex-direction: column;
-        margin: 15px 10px;
+        margin: 15px 10px 5px;
         padding: 15px 10px;
     }
     .news-box-large img{
@@ -110,13 +126,24 @@
         padding-left: 0;
     }
     .two-news-in-one-block{
-        margin: 10px;
+        padding: 0 10px;
+        margin: 0;
+        padding-bottom: 3%;
     }
     .news-box-md{
         margin: 5px 0px;
     }
     .header-styles{
         justify-content: center;
+    }
+    .preview-sm-img-block{
+        display: none;
+    }
+    .preview-img-lg{
+        height: 324px;
+    }
+    .tree-in-one-img-block{
+        margin: 15px 10px;
     }
 
 }
@@ -130,5 +157,11 @@
     }
     .social-icon{
         padding: 5px;
+    }
+    .editor-mode-btn{
+        margin-right: 3px;
+    }
+    .header-styles{
+        padding: 9px;
     }
 }
