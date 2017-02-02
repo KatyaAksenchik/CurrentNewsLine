@@ -348,9 +348,12 @@ input[type="text"], textarea, select, input[type="password"], input[type="email"
     border: solid 1px black;
     text-transform: uppercase;
     text-align: center;
-    margin: 5px;
+    margin: 4px;
     cursor: pointer;
     outline: none;
+    display: inline-block;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .btn-styles:hover, .btn-styles:active {
@@ -370,12 +373,15 @@ input[type="text"], textarea, select, input[type="password"], input[type="email"
     align-items: center;
 }
 
-.registration-field-box p {
+.registration-field-box label {
     width: 35%;
+    display: block;
 }
 
-.registration-field-box [type="text"], .registration-field-box input[type="password"],
-.registration-field-box input[type="email"], .registration-field-box input[type="date"] {
+.registration-field-box [type="text"],
+.registration-field-box input[type="password"],
+.registration-field-box input[type="email"],
+.registration-field-box input[type="date"] {
     width: 65%;
 }
 
@@ -402,6 +408,7 @@ input[type="text"], textarea, select, input[type="password"], input[type="email"
     color: white;
     width: 100%;
     pointer-events: none;
+    display: block;
 }
 
 .preview-img-block {
